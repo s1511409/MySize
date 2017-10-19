@@ -53,21 +53,21 @@
         app:layout_constraintBottom_toTopOf="@+id/inseam" />
 
     <EditText
-        android:id="@+id/wajst"
+        android:id="@+id/waist"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="胴回り"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/droid_image"
-        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/droid_image"
         app:layout_constraintHorizontal_bias="0.0"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/droid_image" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/droid_image" />
 
     <EditText
         android:id="@+id/inseam"
@@ -90,6 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:onClick="onSaveTapped"
         android:text="保存"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
